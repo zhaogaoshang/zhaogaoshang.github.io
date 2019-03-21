@@ -5,7 +5,7 @@
 }
 
 .pubilc-nv__bar{
-    height:0.5rem;
+    height:1rem;
     background-color: black;
     display: flex;
     flex-direction: row;
