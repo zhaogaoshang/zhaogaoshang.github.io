@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>赵高尚</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/pubilc.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    nioahsdgfildjf
+    <!-- 头部 -->
+    <div class="pubilc-nv__bar">
+        <a class="pubilc-nav__item">简历</a>
+        <a class="pubilc-nav__item" href="html/vue.html">VUE</a>
+        <a class="pubilc-nav__item" href="html/mini.html">小程序</a>
+        <a class="pubilc-nav__item" href="html/es.html">ES语法</a>
+    </div>
+
+    <div class="cv-box">
+        <img class="cv-photo" src="images/0_1.jpg" alt="">
+        <img class="cv-photo" src="images/0_2.jpg" alt="">
+        <img class="cv-photo" src="images/0_3.jpg" alt="">
+    </div>
 </body>
+<script src="tool/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+<script src="js/pubilc.js"></script>
+<script>
+    function photo() {
+        let clientWidth = document.body.clientWidth
+        $('.cv-photo').css('width', '50%')
+        $('.cv-photo').css('height', 1122 * (clientWidth / 2) / 793)
+    }
+    photo()
+    window.onresize = res => {
+        photo()
+    }
+</script>
+
 </html>
